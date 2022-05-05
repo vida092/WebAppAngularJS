@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="checklunch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/angular.min.js"></script>
+    <script src="/app.js"></script>
+    <title>Check if too much</title>
+</head>
+<body ng-controller="CheckIfTooMuch" style="font-size: 36px; display: block; text-align: center;" >
+    <h1>Check if too much</h1>
+    <p>Write your lunch separating items whit comma and I'll tell you if it is too much</p>
+    <input style="width: 85%;"  type="text" ng-model="itemstr" >
+    <button ng-click="check()">Check if too much</button>
+    <br>
+    {{resultado}}
+</body>
+</html>
