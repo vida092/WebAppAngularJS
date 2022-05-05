@@ -10,9 +10,12 @@ function CheckIfTooMuch ($scope){
 
     $scope.check=function(){
         var str=$scope.itemstr.split(',');        
-        if (str.length < 4){
-            $scope.resultado="you are good to go"
-        }else{
+        if ($scope.itemstr==""){
+            $scope.resultado="enter data first"
+        }else if(str.length < 4){
+            $scope.resultado="enjoy"
+        }
+        else{
             $scope.resultado="sorry, it is too much"
         }
     };
